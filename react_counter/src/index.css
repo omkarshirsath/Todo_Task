@@ -1,0 +1,104 @@
+body {
+  background-color: azure;
+  height: 100%;
+  width: 100%;
+}
+
+.main-container { 
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.center-container {
+  height: 100vh;
+  width: 100vw; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* css for TodoInput */
+.input-box-todo {
+  width: 250px;
+  padding: 10px;
+  border: 2px solid #007bff;
+  border-radius: 15px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s ease-in-out;
+}
+
+.input-box-todo:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 91, 187, 0.5);
+}
+
+.add-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.add-button:hover {
+  background-color: #0056b3;
+}
+
+.add-button:active {
+  transform: scale(0.95);
+}
+
+/* Css for the TodoList */
+
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 12px 16px;
+  margin: 8px 0;
+  white-space: nowrap;
+  margin-right: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.list-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.list-item span {
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+}
+
+.list-item .delete-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 20px;
+  transition: background 0.3s ease-in-out;
+}
+
+.list-item .delete-btn:hover {
+  background-color: #cc0000;
+}
+
+.list-item .delete-btn:active {
+  transform: scale(0.95);
+}
